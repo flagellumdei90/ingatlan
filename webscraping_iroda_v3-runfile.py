@@ -26,7 +26,7 @@ url = 'https://www.eston.hu/property-search'
 driver.get(url)
 
 # Wait for the page to load fully
-wait = WebDriverWait(driver, 20)
+wait = WebDriverWait(driver, 5) #20
 
 #Scroll down to the bottom of the page
 for x in range(1): #350
