@@ -31,7 +31,7 @@ wait = WebDriverWait(driver, 5) #20
 #Scroll down to the bottom of the page
 for x in range(1): #350
     driver.execute_script("window.scrollBy(0, 2);") # 250
-    time.sleep(10)  # Give time for new items to load
+    time.sleep(5)  # Give time for new items to load #10
 
 # Wait for the elements to be present
 element_name = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '.property-title')))
