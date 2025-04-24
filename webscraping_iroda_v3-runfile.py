@@ -29,8 +29,8 @@ driver.get(url)
 wait = WebDriverWait(driver, 20)
 
 #Scroll down to the bottom of the page
-for x in range(10):
-    driver.execute_script("window.scrollBy(0, 250);")
+for x in range(10): #350
+    driver.execute_script("window.scrollBy(0, 2);") # 250
     time.sleep(10)  # Give time for new items to load
 
 # Wait for the elements to be present
